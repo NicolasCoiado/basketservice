@@ -7,6 +7,9 @@ spring:
       host: localhost
       port: 27017
       database: basket-service
+      username: ${MONGO_USER}
+      password: ${MONGO_PASSWORD}
+      authentication-database: ${MONGO_AUTH_DB}
     redis:
       host: localhost
       port: 6379
