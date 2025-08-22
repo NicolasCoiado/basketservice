@@ -24,6 +24,6 @@ public class ProductController {
     }
     @GetMapping ("/{id}")
     public ResponseEntity<PlatziProductResponse> getProductById (@PathVariable Long id){
-        return ResponseEntity.ok(productService.getProductsById(id));
+        return ResponseEntity.ok(productService.getProductById(id));
     }
 }
